@@ -1,3 +1,2 @@
-const binaryArrayToNumber = arr => {
-  return parseInt(arr.join(""),2)
-};
+def binary_array_to_number(arr):
+    return int("".join(map(lambda x:str(x),arr)),2)
