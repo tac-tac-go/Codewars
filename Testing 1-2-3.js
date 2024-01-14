@@ -1,2 +1,3 @@
-def number(lines):
-    return [f"{i+1}: {j}" for i,j in enumerate(lines)]
+var number=function(array){
+  return array.map((v,i) => `${i+1}: ${v}`)
+}
