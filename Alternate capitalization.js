@@ -1,2 +1,4 @@
-def capitalize(s):
-    return ["".join([j.upper() if i%2==0 else j.lower() for i,j in enumerate(s)]),"".join([j.lower() if i%2==0 else j.upper() for i,j in enumerate(s)])]
+function capitalize(s){
+  return [[...s].map((x,i) => i % 2 == 0 ? x.toUpperCase() : x).join(''),
+          [...s].map((x,i) => i % 2 != 0 ? x.toUpperCase() : x).join('')]
+};
