@@ -1,5 +1,5 @@
 function yourFutureCareer(){
-	var career =  Math.random();
+	let career =  Math.random();
 		if (career <= 0.32) {
 			return "FrontEnd Developer"
 		}else if (career <= 0.65){
