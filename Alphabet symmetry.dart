@@ -1,5 +1,5 @@
 List<int> solve(List<String> arr) {
-  var alpha = "abcdefghijklmnopqrstuvwxyz";
+  const alpha = "abcdefghijklmnopqrstuvwxyz";
   List<int> result = [];
   for(var i=0;i<arr.length;i++){
     var count = 0;
