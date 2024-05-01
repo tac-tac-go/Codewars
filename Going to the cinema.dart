@@ -7,4 +7,5 @@ int movie(int card, int ticket, double perc) {
     sum += dticket *= perc;
   }
   return counter;
+  
 }
