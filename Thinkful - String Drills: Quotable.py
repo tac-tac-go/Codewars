@@ -1,3 +1,2 @@
-function quotable(name, quote){
-  return `${name} said: "${quote}"`
-}
+def quotable(name, quote):
+    return f'{name} said: "{quote}"'
