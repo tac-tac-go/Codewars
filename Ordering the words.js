@@ -1,4 +1,1 @@
-function orderWord(s){
-  if(!s)return "Invalid String!"
-  return [...s].sort().join("")
-}
+const orderWord = s => s ? [...s].sort().join('') : 'Invalid String!';
