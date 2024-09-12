@@ -1,2 +1,2 @@
 def word_to_bin(word):
-    return [format(ord(i),'b').zfill(8) for i in word]
+    return ['{:08b}'.format(ord(c)) for c in word]
