@@ -2,7 +2,7 @@
  * @param {number[]} arr
  * @return {number[]}
  */
-var sortByBits = function(arr) {
+const sortByBits = function(arr) {
     var matrix = [];
     let result = arr.map(v => v.toString(2)).map(v => v.split("").filter(v => v=='1').length);
     result = result.map( v=> v-result.reduce((a,b) => Math.min(a,b)))
