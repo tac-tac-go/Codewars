@@ -8,10 +8,6 @@ class Dictionary {
   }
   
   look(key) {
-    if(Object.keys(this.dict).includes(key)){
-      return this.dict[key]
-    }else{
-      return `Can't find entry for ${key}`
-    }
+    return this.dict[key] || `Can\'t find entry for ${key}`;
   }
 }
