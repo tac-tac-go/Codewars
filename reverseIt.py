@@ -1,8 +1,4 @@
 def reverse_it(data):
-    if type(data)==str:
-        return data[::-1]
-    elif type(data)==int:
-        return int(str(data)[::-1])
-    elif type(data)==float:
-        return float(str(data)[::-1])
+    if type(data) in [int, str, float]:
+        return type(data)(str(data)[::-1])
     return data
