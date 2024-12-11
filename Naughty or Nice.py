@@ -1,5 +1,4 @@
-def get_nice_names(people):
-    return [obj['name'] for obj in people if obj["was_nice"]]
-
-def get_naughty_names(people):
-    return [obj['name'] for obj in people if not(obj["was_nice"])]
+from collections import Counter
+def naughty_or_nice(data):
+    result = Counter([tmp2 for tmp in data.values() for tmp2 in tmp.values()])
+    return 'Nice!' if result['Nice']>=result['Naughty'] else 'Naughty!'
