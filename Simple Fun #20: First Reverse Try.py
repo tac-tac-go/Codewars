@@ -1,7 +1,6 @@
-function firstReverseTry(arr) {
-  if(arr.length==0)return []
-  let tmp = arr[0];
-  arr[0] = arr[arr.length-1];
-  arr[arr.length-1] = tmp;
-  return arr
-}
+def first_reverse_try(arr):
+    if len(arr)==0:return []
+    tmp = arr[0]
+    arr[0] = arr[-1]
+    arr[-1] = tmp
+    return arr
