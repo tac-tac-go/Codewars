@@ -7,5 +7,3 @@ def up_array(arr):
         return list(map(lambda x:int(x),list(str2)))
     else:
         return None
-
-
