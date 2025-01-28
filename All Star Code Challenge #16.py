@@ -1,2 +1,2 @@
-def no_repeat(string):
-    return [tmp for tmp in string if string.find(tmp)==string.rfind(tmp)][0]
+def no_repeat(s):
+    return next(c for c in s if s.find(c) == s.rfind(c))
