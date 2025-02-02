@@ -4,6 +4,4 @@ class Quark(object):
         self.flavor = _flavor;
         self.baryon_number = 1/3
     def interact(self,other):
-        tmp = self.color
-        self.color = other.color
-        other.color = tmp
+        self.color,other.color = other.color,self.color
