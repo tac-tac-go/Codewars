@@ -1,4 +1,3 @@
-const getNewNotes = (salary,bills) => {
-  let amount = bills.reduce((a,b) => a+b,0)
-  return salary-amount < 0 ? 0 : Math.floor((salary-amount)/5)
-}
+def get_new_notes(salary,bills):
+    arr_s = sum(bills)
+    return 0 if salary - arr_s < 0 else (salary - arr_s)//5
