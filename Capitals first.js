@@ -1,6 +1,6 @@
 function capitalsFirst(str){
-  let words = str.split(' ');
-  let upper = words.filter(function(x) { return x.charAt(0).match(/[A-Z]/) });
-  let lower = words.filter(function(x) { return x.charAt(0).match(/[a-z]/) });
-  return upper.concat(lower).join(' ');
+  const arr = str.split(" ")
+  const lower = arr.filter((v) => v.charAt(0).match(/^[a-z]/))
+  const upper = arr.filter((v) => v.charAt(0).match(/^[A-Z]/))
+  return upper.concat(lower).join(" ")
 }
