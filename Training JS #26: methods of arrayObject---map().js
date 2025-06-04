@@ -1,1 +1,1 @@
-const isolateIt = (arr) => [...arr].map(v => v.length%2===0 ? v.slice(0,v.length/2)+"|"+v.slice(v.length/2,) : v.slice(0,Math.floor(v.length/2))+"|"+v.slice(Math.floor(v.length/2)+1,))
+const isolateIt = (arr) => arr.map(s=>s.slice(0,s.length/2)+"|"+s.slice(-s.length/2))
