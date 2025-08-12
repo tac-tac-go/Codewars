@@ -1,0 +1,1 @@
+const quadrantSegment = (A, B) => (Math.sign(A.x)===1 && Math.sign(B.x)===-1) || (Math.sign(A.x)===-1 && Math.sign(B.x)===1) || (Math.sign(A.y)===1 && Math.sign(B.y)===-1) || (Math.sign(A.y)===-1 && Math.sign(B.y)===1)
