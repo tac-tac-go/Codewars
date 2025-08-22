@@ -1,0 +1,1 @@
+const quine = () => quine.toString()
