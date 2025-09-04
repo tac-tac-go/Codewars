@@ -1,2 +1,2 @@
-const isSubsetOf = (s1, s2) => (new Set([...s1].filter(x => !s2.has(x)))).size===0;
-const isSupersetOf = (s1, s2) => (new Set([...s2].filter(x => !s1.has(x)))).size===0;
+const isSubsetOf = (s1, s2) => [...s1].every( e => s2.has(e) )
+const isSupersetOf = (s1, s2) => isSubsetOf(s2,s1)
