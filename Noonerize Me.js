@@ -4,3 +4,4 @@ function noonerize(numbers) {
   [x, y] = [y[0] + x.slice(1), x[0] + y.slice(1)].map(Number);
   return x && y ? Math.abs(x - y) : 'invalid array';
 }
+  
