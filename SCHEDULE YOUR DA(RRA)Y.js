@@ -1,0 +1,1 @@
+const dayPlan = (hours, tasks, duration) => (hours*60 < tasks*duration) && tasks > 0 ? 'You\'re not sleeping tonight!' : [...Array(tasks-1)].map(v => [duration,Math.round(((hours*60)-(tasks*duration))/(tasks-1))]).flat().concat(duration)
