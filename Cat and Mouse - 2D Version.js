@@ -24,3 +24,4 @@ function catMouse(map,moves){
   
   return movesToMice <= moves ? 'Caught!' : 'Escaped!';
 }
+  
