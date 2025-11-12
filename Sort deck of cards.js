@@ -1,0 +1,4 @@
+function sortCards(array){
+  const order = { A:0, '2':1, '3':2, '4':3, '5':4, '6':5, '7':6, '8':7, '9':8, T:9, J:10, Q:11, K:12 };
+  return [...array].sort((a,b) => order[a] - order[b])
+}
