@@ -1,5 +1,11 @@
-const explode = (x) => {
-  const a = typeof x[0]==='number' ? x[0] : null
-  const b = typeof x[1]==='number' ? x[1] : null
-  return a===null && b==null ? 'Void!' : Array.from({length: a+b},(_,i) => x)
+explode(List arr){
+  if(arr[0] is int && arr[1] is int){
+    return List.generate(arr[0]+arr[1],(_) => List.from(arr));
+  }else if(arr[0] is int && arr[1] is String){
+    return List.generate(arr[0],(_) => List.from(arr));
+  }else if(arr[0] is String && arr[1] is int){
+    return List.generate(arr[1],(_) => List.from(arr));
+  }else{
+    return  'Void!';
+  }
 }
