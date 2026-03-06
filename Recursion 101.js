@@ -1,7 +1,6 @@
-function solve(a,b){
-    while((a*2<=b || a>=b*2) && (a!==0 && b!==0)){
-      if(a*2<=b)b-=2*a
-      else a-=2*b
-    }
-    return [a,b]
+function solve(a, b) {
+    if (a === 0 || b === 0) return [a, b];
+    if (a >= 2 * b) return solve(a % (2 * b), b);
+    if (b >= 2 * a) return solve(a, b % (2 * a));
+    return [a, b];
 }
