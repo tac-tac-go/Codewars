@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(WEZTERM_SHELL_SKIP_ALL=1 zsh:*)",
+      "Bash(zsh:*)",
+      "Skill(update-config)",
+      "Bash(claude mcp *)"
+    ]
+  }
+}
