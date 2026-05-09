@@ -4,7 +4,9 @@
       "Bash(WEZTERM_SHELL_SKIP_ALL=1 zsh:*)",
       "Bash(zsh:*)",
       "Skill(update-config)",
-      "Bash(claude mcp *)"
+      "Bash(claude mcp *)",
+      "Bash(xattr -w com.dropbox.ignored 1 .git)",
+      "Bash(xattr -l .git)"
     ]
   }
 }
