@@ -1,9 +1,4 @@
-int digitalRoot(int number) {
-  if (number < 10) return number;
-  final sum = number
-      .toString()
-      .split('')
-      .map(int.parse)
-      .reduce((a, b) => a + b);
-  return digitalRoot(sum);
+int digitalRoot(int n) {
+  if (n == 0) return 0;
+  return 1 + (n - 1) % 9;
 }
