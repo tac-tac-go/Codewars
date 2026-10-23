@@ -1,8 +1,4 @@
-export function absentVowel(x: string) {
-  const strings = ['a','e','i','o','u']
-  for(let i of strings){
-    if(x.indexOf(i)==-1){
-      return strings.indexOf(i)
-    }
-  }
+const VOWELS = ['a', 'e', 'i', 'o', 'u']
+export function absentVowel(x: string): number {
+  return VOWELS.findIndex((v) => !x.includes(v))
 }
