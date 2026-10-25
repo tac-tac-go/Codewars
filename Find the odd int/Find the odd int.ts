@@ -1,11 +1,10 @@
 export const findOdd = (xs: number[]): number => {
-  let result = 0;
-  for(let i of xs){
-    if([...xs].filter(v => v==i).length%2==1){
-      result=i
-      break
-    }
+  const count = new Map<number, number>();
+  for (const v of xs) {
+    count.set(v, (count.get(v) ?? 0) + 1);
   }
-  return result
+  for (const [num, c] of count) {
+    if (c % 2 === 1) return num;
+  }
+  return 0;
 };
-
