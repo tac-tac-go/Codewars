@@ -1,7 +1,7 @@
-export function humanReadable(seconds:number):string {
-  const hour = Math.floor(seconds / 3600)
-  seconds = seconds % 3600
-  const minutes = Math.floor(seconds / 60)
-  seconds = seconds%60
-  return String(hour).padStart(2, '0')+":"+String(minutes).padStart(2, '0')+":"+String(seconds).padStart(2, '0')
+export function humanReadable(totalSeconds: number): string {
+  const safe = Math.max(0, Math.floor(totalSeconds))
+  const h = Math.floor(safe / 3600)
+  const m = Math.floor((safe % 3600) / 60)
+  const s = safe % 60
+  return [h, m, s].map((n) => String(n).padStart(2, '0')).join(':')
 }
