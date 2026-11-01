@@ -1,10 +1,9 @@
-export function findMissingLetter(array:string[]):string{
-  let result : string = ""
-  for(let i=1;i<array.length;i++){
-    if(array[i].charCodeAt(0)-array[i-1].charCodeAt(0)!==1){
-      result = String.fromCharCode(array[i].charCodeAt(0)-1)
-      break
+export function findMissingLetter(array: string[]): string {
+  for (let i = 1; i < array.length; i++) {
+    const prev = array[i - 1].charCodeAt(0);
+    if (array[i].charCodeAt(0) - prev !== 1) {
+      return String.fromCharCode(prev + 1);
     }
   }
-  return result
+  return "";
 }
