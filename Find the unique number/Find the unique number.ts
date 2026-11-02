@@ -1,4 +1,4 @@
 export function findUniq(arr: number[]): number {
-  return arr.filter((el) => arr.indexOf(el) == arr.lastIndexOf(el))[0];
+  const common = arr[0] === arr[1] ? arr[0] : arr[2]
+  return arr.find((v) => v !== common) as number
 }
-
