@@ -4,5 +4,6 @@ function strangeCode(s, e) {
     s++; e--;                      
     result += (result.length % 2 === 0) ? "a" : "b";  
   }
+  
   return result;                   
 }
